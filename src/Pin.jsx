@@ -9,9 +9,7 @@ export default function Pin() {
   useEffect(() => {
     const observer = new IntersectionObserver(handleObserve, { threshold: 0 });
     observer.observe(document.querySelector('#observe'));
-    return () => {
-      observer.disconnect();
-    };
+    return () => observer.disconnect();
   }, []);
   // page 변경에 따른 API 호출
 

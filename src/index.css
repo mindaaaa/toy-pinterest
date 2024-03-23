@@ -2,3 +2,16 @@ div {
   display: flex;
   flex-wrap: wrap;
 }
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.image-object {
+  padding: 10px;
+}
+
+img {
+  border-radius: 5%;
+}
